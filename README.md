@@ -28,7 +28,7 @@ An interactive 3D book visualization project built with Three.js that lets users
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/3d-book-another.git
+git clone https://github.com/mhtafhim/3d-book-another.git
 ```
 
 Navigate to the project directory:
