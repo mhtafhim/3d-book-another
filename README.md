@@ -4,6 +4,9 @@
 
 An interactive 3D book visualization project built with Three.js that lets users manipulate and interact with a realistic book model.
 
+![3D Book Viewer Screenshot](image.png)
+
+
 ## 3D Book Visualization
 
 ### Features
