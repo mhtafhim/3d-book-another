@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Book with Three.js</title>
+    <link rel="stylesheet" href="./js/style.css">
+</head>
+<body>
+    <!-- Control panel -->
+    <div id="controls">
+        <div class="control-group">
+            <button id="toggleCover">Toggle Book Cover</button>
+            <div class="slider-container">
+                <label for="coverSlider">Cover Position:</label>
+                <input type="range" id="coverSlider" min="0" max="90" value="45">
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <button id="toggleCamera">Toggle Camera Animation</button>
+            <div class="slider-container">
+                <label for="cameraXSlider">Camera X:</label>
+                <input type="range" id="cameraXSlider" min="-50" max="50" value="30">
+                <label for="cameraYSlider">Camera Y:</label>
+                <input type="range" id="cameraYSlider" min="0" max="50" value="15">
+                <label for="cameraZSlider">Camera Z:</label>
+                <input type="range" id="cameraZSlider" min="-50" max="50" value="0">
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <button id="toggleLight">Toggle Light Animation</button>
+            <div class="slider-container">
+                <label for="lightXSlider">Light X:</label>
+                <input type="range" id="lightXSlider" min="-30" max="30" value="20">
+                <label for="lightYSlider">Light Y:</label>
+                <input type="range" id="lightYSlider" min="0" max="30" value="10">
+                <label for="lightZSlider">Light Z:</label>
+                <input type="range" id="lightZSlider" min="-30" max="30" value="0">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <button id="openCoverBtn">Open Cover</button>
+            <button id="closeCoverBtn">Close Cover</button>
+            <button id="resetCameraBtn">Reset Camera</button>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
