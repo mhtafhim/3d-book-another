@@ -122,6 +122,22 @@ export function setupControls(animationState, camera, frontCoverGroup, light, li
             }
         }
     });
+    
+    
+    document.addEventListener('click', () => {
+    if (!animationState.isCoverOpen) {
+        animationState.animateCover = false;
+        animationState.isCoverOpen = true;
+        frontCoverGroup.rotation.z = Math.PI / 2;
+        coverSlider.value = 90;
+    } else {
+        animationState.animateCover = false;
+        animationState.isCoverOpen = false;
+        frontCoverGroup.rotation.z = 0;
+        coverSlider.value = 0;
+    }
+});
+    
 
     return {
         coverSlider,
